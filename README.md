@@ -33,6 +33,17 @@ secrets = {
 import wifi_p26 as wifi
 The main.py file is automaticaly executed upon power-up which contains a neverending ```while True:``` loop.
 
+### New Font
+
+True Type fonts are used for displaying text and number.
+Donwload a TTF file of your choise and use the provided _font-to-py.py_ script to generate python representation. With the ```-c``` paraneter only required characters can be extracted to minimize memory consumption.
+
+```
+python3 font-to-py.py -c "0123456789pm%°C" Amatic-Bold.ttf 64 microAmatic64bs.py
+```
+
+You need to elaborate the font size to display text correctly.
+
 ![](./images/IMG_9169.jpeg)
 ![](./images/IMG_9165.jpeg)
 ![](./images/IMG_9163.jpeg)
